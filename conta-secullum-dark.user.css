@@ -1,0 +1,111 @@
+/* ==UserStyle==
+
+@name           Conta Secullum Dark
+@namespace      https://github.com/fhelwanger/conta-secullum-dark
+@version        1.0.0
+@description    Tema escuro para Conta Secullum
+@author         fhelwanger (https://github.com/fhelwanger)
+
+@var color      pretinho    "pretinho"      #2e2e2e
+@var color      preto       "preto"         #262626
+@var color      pretao      "pretao"        #212121
+@var color      branquinho  "branquinho"    #e6e6e6
+@var color      branco      "branco"        #f2f2f2
+@var color      cinzinha    "cinzinha"      #bfbfbf
+@var color      azulzinho   "azulzinho"     #4f8cc9
+@var color      vermelinho  "vermelinho"    #a54242
+
+==/UserStyle== */
+
+@-moz-document domain("autenticador.secullum.com.br") {
+  body {
+    background-color: var(--preto);
+  }
+
+  header {
+    background-color: var(--pretao);
+    border-bottom: solid 1px var(--pretinho);
+  }
+
+  header .logo,
+  header .logo-vertical {
+    filter: saturate(10) grayscale(1) brightness(3) contrast(0.7);
+  }
+
+  header h1,
+  header h2,
+  header p {
+    color: var(--branquinho);
+  }
+
+  main a:not(.btn),
+  main .link,
+  main .btn-link {
+    color: var(--azulzinho) !important;
+  }
+
+  main button,
+  main .btn.blue {
+    background-color: var(--azulzinho) !important;
+    color: var(--branquinho) !important;
+  }
+
+  main input[type='text'],
+  main input[type='password'] {
+    background-color: var(--preto);
+    border: solid 1px var(--pretinho) !important;
+    color: var(--branquinho);
+  }
+
+  main input[type='text']:focus,
+  main input[type='password']:focus {
+    background-color: var(--pretao);
+  }
+
+  main input[type='text']:disabled,
+  main input[type='password']:disabled {
+    background-color: var(--pretao);
+  }
+
+  main .container,
+  main .container-big,
+  main .container-form {
+    background-color: var(--pretao);
+    border: solid 1px var(--pretinho);
+    color: var(--cinzinha);
+  }
+
+  .validation-summary-errors {
+    color: var(--vermelinho);
+  }
+
+  footer {
+    background-color: var(--pretao);
+    border-top: solid 1px var(--pretinho);
+  }
+
+  footer a,
+  footer a:visited {
+    color: var(--azulzinho);
+  }
+
+  footer p {
+    color: var(--cinzinha);
+  }
+
+  .div-lista-servicos > .tr-servicos:nth-child(odd) {
+    background-color: var(--preto);
+  }
+
+  .div-lista-servicos > .tr-servicos:nth-child(even) {
+    background-color: var(--pretao);
+  }
+
+  .div-lista-servicos > .tr-servicos {
+    border: solid 1px var(--pretinho);
+  }
+
+  .div-lista-servicos > .tr-servicos:first-child {
+    border-top: solid 1px var(--pretinho);
+  }
+}
